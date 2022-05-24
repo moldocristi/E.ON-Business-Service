@@ -10,7 +10,7 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="company" elementType="Argument">
             <stringProp name="Argument.name">company</stringProp>
-            <stringProp name="Argument.value">E.ON</stringProp>
+            <stringProp name="Argument.value">EON</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="country" elementType="Argument">
@@ -229,7 +229,7 @@ vars.putObject(&quot;jobList&quot;,jobList);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="city" enabled="true">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">city</stringProp>
-              <stringProp name="RegexExtractor.regex">&lt;td class=&quot;colLocation hidden-phone&quot; headers=&quot;hdrLocation&quot;&gt;\n\s+&lt;span class=&quot;jobLocation&quot;&gt;\n\s+(.*), RO\n\s+&lt;(small class=&quot;nobr&quot;&gt;(.*) more&amp;hellip;&lt;\/small|\/span)</stringProp>
+              <stringProp name="RegexExtractor.regex">&lt;td class=&quot;colLocation hidden-phone&quot; headers=&quot;hdrLocation&quot;&gt;\n\s+&lt;span class=&quot;jobLocation&quot;&gt;\n\s+(.*), RO\n\s+&lt;(small class=&quot;nobr&quot;&gt;(.*) more&amp;hellip;&lt;\/small|\/span|small class=&quot;nobr&quot;&gt;(.*) more…&lt;\/small&gt;)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default"></stringProp>
               <stringProp name="RegexExtractor.match_number">-1</stringProp>
@@ -459,7 +459,7 @@ vars.putObject(&quot;jobList&quot;,jobList);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="city" enabled="true">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">city</stringProp>
-              <stringProp name="RegexExtractor.regex">&lt;td class=&quot;colLocation hidden-phone&quot; headers=&quot;hdrLocation&quot;&gt;\n\s+&lt;span class=&quot;jobLocation&quot;&gt;\n\s+(.*), RO\n\s+&lt;(small class=&quot;nobr&quot;&gt;(.*) more&amp;hellip;&lt;\/small|\/span)</stringProp>
+              <stringProp name="RegexExtractor.regex">&lt;td class=&quot;colLocation hidden-phone&quot; headers=&quot;hdrLocation&quot;&gt;\n\s+&lt;span class=&quot;jobLocation&quot;&gt;\n\s+(.*), RO\n\s+&lt;(small class=&quot;nobr&quot;&gt;(.*) more&amp;hellip;&lt;\/small|\/span|small class=&quot;nobr&quot;&gt;(.*) more…&lt;\/small&gt;)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default"></stringProp>
               <stringProp name="RegexExtractor.match_number">-1</stringProp>
